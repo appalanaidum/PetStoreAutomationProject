@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="9.875">
+    <testcase classname="Pet Store" name="Create a new pet" time="5.527">
+        <system-out><![CDATA[Given I have a new pet object with name "Cat" and ID 11.....................passed
+When I add the new pet......................................................passed
+Then the response status code should be 200.................................passed
+And the response body should contain the details of the new pet.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Pet Store" name="Get pet by valid ID" time="1.353">
+        <system-out><![CDATA[Given I have a valid pet ID.................................................passed
+When I request the pet by ID................................................passed
+Then the response status code should be 200.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Pet Store" name="Delete an existing pet" time="2.573">
+        <system-out><![CDATA[Given I have an existing pet with ID 11.....................................passed
+When I delete the pet with ID 11............................................passed
+Then the response status code should be 200.................................passed
+And the pet with ID 11 should not exist anymore.............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
